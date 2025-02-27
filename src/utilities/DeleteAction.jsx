@@ -3,7 +3,7 @@ import { redirect } from "react-router";
 export async function action({ params, request }) {
   const id = params.id;
   const response = await fetch(
-    "https://of-server-faa8e3a59e51.herokuapp.com:10754/record/" + id,
+    "https://of-server-faa8e3a59e51.herokuapp.com/record/" + id,
     {
       method: "DELETE",
     }
