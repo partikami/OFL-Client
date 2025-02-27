@@ -20,11 +20,11 @@ export async function action({ request, params }) {
     depricated: data.get("depricated"),
   };
 
-  let url = "http://localhost:5050/record";
+  let url = "https://of-server-faa8e3a59e51.herokuapp.com:10754/record";
 
   if (method === "PATCH") {
     const id = params.id;
-    url = "http://localhost:5050/record/" + id;
+    url = "https://of-server-faa8e3a59e51.herokuapp.com:10754/record/" + id;
   }
 
   let response = await fetch(url, {

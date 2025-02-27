@@ -1,7 +1,9 @@
 // This loader function returns one specific record
 export async function loader({ request, params }) {
   const id = params.id;
-  const response = await fetch("http://localhost:5050/record/" + id);
+  const response = await fetch(
+    "https://of-server-faa8e3a59e51.herokuapp.com:10754/record/" + id
+  );
 
   if (!response.ok) {
     throw new Response(
