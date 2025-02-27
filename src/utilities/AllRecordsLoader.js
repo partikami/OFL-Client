@@ -2,10 +2,7 @@
 export async function loader() {
   // const response = await fetch("http://localhost:5050/record/");
   const response = await fetch(
-    "https://of-server-faa8e3a59e51.herokuapp.com/record/",
-    {
-      mode: "no-cors",
-    }
+    "https://of-server-faa8e3a59e51.herokuapp.com/record/"
   );
 
   if (!response.ok) {
