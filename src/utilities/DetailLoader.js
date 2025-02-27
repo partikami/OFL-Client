@@ -2,7 +2,7 @@
 export async function loader({ request, params }) {
   const id = params.id;
   const response = await fetch(
-    "https://of-server-faa8e3a59e51.herokuapp.com:10754/record/" + id
+    "https://of-server-faa8e3a59e51.herokuapp.com/record/" + id
   );
 
   if (!response.ok) {
