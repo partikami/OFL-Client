@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "serve -s dist"
+    "start": "serve -s dist",
+    "build": "vite build"
   },
   "dependencies": {
     "@tanstack/react-table": "^8.20.5",

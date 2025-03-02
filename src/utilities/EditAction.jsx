@@ -1,6 +1,6 @@
 import { redirect } from "react-router";
 
-// This action function is used in the Credit and Edit routes
+// This action function is used in the Create and Edit routes
 export async function action({ request, params }) {
   const method = request.method;
 
@@ -20,11 +20,11 @@ export async function action({ request, params }) {
     depricated: data.get("depricated"),
   };
 
-  let url = "https://of-server-faa8e3a59e51.herokuapp.com/record";
+  let url = "http://localhost:5050/record";
 
   if (method === "PATCH") {
     const id = params.id;
-    url = "https://of-server-faa8e3a59e51.herokuapp.com/record/" + id;
+    url = "http://localhost:5050/record/" + id;
   }
 
   let response = await fetch(url, {
